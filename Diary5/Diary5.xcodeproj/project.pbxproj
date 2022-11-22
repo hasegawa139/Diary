@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04D5B18C2928865F00234807 /* Diary5App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B18B2928865F00234807 /* Diary5App.swift */; };
+		04D5B18E2928865F00234807 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B18D2928865F00234807 /* ContentView.swift */; };
+		04D5B1902928866100234807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D5B18F2928866000234807 /* Assets.xcassets */; };
+		04D5B1932928866100234807 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D5B1922928866100234807 /* Preview Assets.xcassets */; };
+		04D5B19A292886C000234807 /* DisplayStyleTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B199292886C000234807 /* DisplayStyleTabView.swift */; };
+		04D5B19C292886E100234807 /* DiaryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B19B292886E100234807 /* DiaryListView.swift */; };
+		04D5B19E2928872700234807 /* DiaryListFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B19D2928872700234807 /* DiaryListFormView.swift */; };
+		04D5B1A02928874E00234807 /* FilterDiariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B19F2928874E00234807 /* FilterDiariesView.swift */; };
+		04D5B1A22928877000234807 /* YearPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1A12928877000234807 /* YearPickerView.swift */; };
+		04D5B1A42928878E00234807 /* MonthPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1A32928878E00234807 /* MonthPickerView.swift */; };
+		04D5B1A6292887B500234807 /* DecorationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1A5292887B500234807 /* DecorationPickerView.swift */; };
+		04D5B1A8292887D300234807 /* SelectedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1A7292887D300234807 /* SelectedItem.swift */; };
+		04D5B1AA292887F800234807 /* ExtractedDiariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1A9292887F800234807 /* ExtractedDiariesView.swift */; };
+		04D5B1AC2928888400234807 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1AB2928888400234807 /* CalendarView.swift */; };
+		04D5B1AE292888D100234807 /* DaysDiaryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1AD292888D100234807 /* DaysDiaryListView.swift */; };
+		04D5B1B0292888F000234807 /* DiaryListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1AF292888F000234807 /* DiaryListRowView.swift */; };
+		04D5B1B22928890C00234807 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1B12928890C00234807 /* DiaryView.swift */; };
+		04D5B1B42928892E00234807 /* AddDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1B32928892E00234807 /* AddDiaryView.swift */; };
+		04D5B1B62928894B00234807 /* ModifyDiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1B52928894A00234807 /* ModifyDiaryView.swift */; };
+		04D5B1B82928896F00234807 /* DiaryFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1B72928896F00234807 /* DiaryFormView.swift */; };
+		04D5B1BA2928898F00234807 /* DiaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1B92928898F00234807 /* DiaryItem.swift */; };
+		04D5B1BC292889B500234807 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1BB292889B500234807 /* UserData.swift */; };
+		04D5B1BE292889DA00234807 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5B1BD292889DA00234807 /* Date+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04D5B1882928865F00234807 /* Diary5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary5.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D5B18B2928865F00234807 /* Diary5App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary5App.swift; sourceTree = "<group>"; };
+		04D5B18D2928865F00234807 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04D5B18F2928866000234807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04D5B1922928866100234807 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04D5B199292886C000234807 /* DisplayStyleTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayStyleTabView.swift; sourceTree = "<group>"; };
+		04D5B19B292886E100234807 /* DiaryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListView.swift; sourceTree = "<group>"; };
+		04D5B19D2928872700234807 /* DiaryListFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListFormView.swift; sourceTree = "<group>"; };
+		04D5B19F2928874E00234807 /* FilterDiariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDiariesView.swift; sourceTree = "<group>"; };
+		04D5B1A12928877000234807 /* YearPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearPickerView.swift; sourceTree = "<group>"; };
+		04D5B1A32928878E00234807 /* MonthPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPickerView.swift; sourceTree = "<group>"; };
+		04D5B1A5292887B500234807 /* DecorationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecorationPickerView.swift; sourceTree = "<group>"; };
+		04D5B1A7292887D300234807 /* SelectedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedItem.swift; sourceTree = "<group>"; };
+		04D5B1A9292887F800234807 /* ExtractedDiariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractedDiariesView.swift; sourceTree = "<group>"; };
+		04D5B1AB2928888400234807 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		04D5B1AD292888D100234807 /* DaysDiaryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysDiaryListView.swift; sourceTree = "<group>"; };
+		04D5B1AF292888F000234807 /* DiaryListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListRowView.swift; sourceTree = "<group>"; };
+		04D5B1B12928890C00234807 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		04D5B1B32928892E00234807 /* AddDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDiaryView.swift; sourceTree = "<group>"; };
+		04D5B1B52928894A00234807 /* ModifyDiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyDiaryView.swift; sourceTree = "<group>"; };
+		04D5B1B72928896F00234807 /* DiaryFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryFormView.swift; sourceTree = "<group>"; };
+		04D5B1B92928898F00234807 /* DiaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryItem.swift; sourceTree = "<group>"; };
+		04D5B1BB292889B500234807 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		04D5B1BD292889DA00234807 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04D5B1852928865F00234807 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0461905A2928E1BA00C5A1CF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		04D5B17F2928865F00234807 = {
+			isa = PBXGroup;
+			children = (
+				04D5B18A2928865F00234807 /* Diary5 */,
+				04D5B1892928865F00234807 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04D5B1892928865F00234807 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04D5B1882928865F00234807 /* Diary5.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04D5B18A2928865F00234807 /* Diary5 */ = {
+			isa = PBXGroup;
+			children = (
+				04D5B18B2928865F00234807 /* Diary5App.swift */,
+				04D5B199292886C000234807 /* DisplayStyleTabView.swift */,
+				04D5B19B292886E100234807 /* DiaryListView.swift */,
+				04D5B19D2928872700234807 /* DiaryListFormView.swift */,
+				04D5B19F2928874E00234807 /* FilterDiariesView.swift */,
+				04D5B1A12928877000234807 /* YearPickerView.swift */,
+				04D5B1A32928878E00234807 /* MonthPickerView.swift */,
+				04D5B1A5292887B500234807 /* DecorationPickerView.swift */,
+				04D5B1A7292887D300234807 /* SelectedItem.swift */,
+				04D5B1A9292887F800234807 /* ExtractedDiariesView.swift */,
+				04D5B18D2928865F00234807 /* ContentView.swift */,
+				04D5B1AB2928888400234807 /* CalendarView.swift */,
+				04D5B1AD292888D100234807 /* DaysDiaryListView.swift */,
+				04D5B1AF292888F000234807 /* DiaryListRowView.swift */,
+				04D5B1B12928890C00234807 /* DiaryView.swift */,
+				04D5B1B32928892E00234807 /* AddDiaryView.swift */,
+				04D5B1B52928894A00234807 /* ModifyDiaryView.swift */,
+				04D5B1B72928896F00234807 /* DiaryFormView.swift */,
+				04D5B1B92928898F00234807 /* DiaryItem.swift */,
+				04D5B1BB292889B500234807 /* UserData.swift */,
+				04D5B1BD292889DA00234807 /* Date+Extension.swift */,
+				0461905A2928E1BA00C5A1CF /* New Group */,
+				04D5B18F2928866000234807 /* Assets.xcassets */,
+				04D5B1912928866100234807 /* Preview Content */,
+			);
+			path = Diary5;
+			sourceTree = "<group>";
+		};
+		04D5B1912928866100234807 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04D5B1922928866100234807 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04D5B1872928865F00234807 /* Diary5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D5B1962928866100234807 /* Build configuration list for PBXNativeTarget "Diary5" */;
+			buildPhases = (
+				04D5B1842928865F00234807 /* Sources */,
+				04D5B1852928865F00234807 /* Frameworks */,
+				04D5B1862928865F00234807 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Diary5;
+			productName = Diary5;
+			productReference = 04D5B1882928865F00234807 /* Diary5.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04D5B1802928865F00234807 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					04D5B1872928865F00234807 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 04D5B1832928865F00234807 /* Build configuration list for PBXProject "Diary5" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04D5B17F2928865F00234807;
+			productRefGroup = 04D5B1892928865F00234807 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04D5B1872928865F00234807 /* Diary5 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04D5B1862928865F00234807 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D5B1932928866100234807 /* Preview Assets.xcassets in Resources */,
+				04D5B1902928866100234807 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04D5B1842928865F00234807 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D5B1AE292888D100234807 /* DaysDiaryListView.swift in Sources */,
+				04D5B1A6292887B500234807 /* DecorationPickerView.swift in Sources */,
+				04D5B1BA2928898F00234807 /* DiaryItem.swift in Sources */,
+				04D5B18E2928865F00234807 /* ContentView.swift in Sources */,
+				04D5B1AC2928888400234807 /* CalendarView.swift in Sources */,
+				04D5B18C2928865F00234807 /* Diary5App.swift in Sources */,
+				04D5B1B22928890C00234807 /* DiaryView.swift in Sources */,
+				04D5B1B82928896F00234807 /* DiaryFormView.swift in Sources */,
+				04D5B1A02928874E00234807 /* FilterDiariesView.swift in Sources */,
+				04D5B1A22928877000234807 /* YearPickerView.swift in Sources */,
+				04D5B1A8292887D300234807 /* SelectedItem.swift in Sources */,
+				04D5B1BE292889DA00234807 /* Date+Extension.swift in Sources */,
+				04D5B19C292886E100234807 /* DiaryListView.swift in Sources */,
+				04D5B1B42928892E00234807 /* AddDiaryView.swift in Sources */,
+				04D5B19A292886C000234807 /* DisplayStyleTabView.swift in Sources */,
+				04D5B19E2928872700234807 /* DiaryListFormView.swift in Sources */,
+				04D5B1B62928894B00234807 /* ModifyDiaryView.swift in Sources */,
+				04D5B1B0292888F000234807 /* DiaryListRowView.swift in Sources */,
+				04D5B1A42928878E00234807 /* MonthPickerView.swift in Sources */,
+				04D5B1BC292889B500234807 /* UserData.swift in Sources */,
+				04D5B1AA292887F800234807 /* ExtractedDiariesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04D5B1942928866100234807 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04D5B1952928866100234807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04D5B1972928866100234807 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Diary5/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Diary5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04D5B1982928866100234807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Diary5/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Diary5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04D5B1832928865F00234807 /* Build configuration list for PBXProject "Diary5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D5B1942928866100234807 /* Debug */,
+				04D5B1952928866100234807 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D5B1962928866100234807 /* Build configuration list for PBXNativeTarget "Diary5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D5B1972928866100234807 /* Debug */,
+				04D5B1982928866100234807 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04D5B1802928865F00234807 /* Project object */;
+}
