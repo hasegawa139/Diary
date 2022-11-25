@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct DisplayStyleTabView: View {
+	@StateObject var selectedItem = SelectedItem()
+	
     var body: some View {
         TabView {
             ContentView()
                 .tabItem {
                     Label("カレンダー", systemImage: "calendar")
                 }
+				.environmentObject(selectedItem)
             
             DiaryListView()
                 .tabItem {
                     Label("日記", systemImage: "text.book.closed")
                 }
+				.environmentObject(selectedItem)
         }
         .onAppear {
             UITabBar.appearance().backgroundColor = .white.withAlphaComponent(0.9)

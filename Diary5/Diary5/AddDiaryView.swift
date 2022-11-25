@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddDiaryView: View {
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var userData: UserData
+    @EnvironmentObject var userData: UserData
     @Binding var dateComponent: DateComponents
     
     @State private var decoration = DiaryItem.Decoration.circle
@@ -62,6 +62,8 @@ struct AddDiaryView_Previews: PreviewProvider {
     static var dateComponent: DateComponents = Calendar.current.dateComponents(in: TimeZone.current, from: Date())
     
     static var previews: some View {
-        AddDiaryView(userData: UserData.test(), dateComponent: .constant(dateComponent))
+		let userData = UserData.test()
+        AddDiaryView(dateComponent: .constant(dateComponent))
+			.environmentObject(userData)
     }
 }

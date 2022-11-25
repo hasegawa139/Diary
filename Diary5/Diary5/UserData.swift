@@ -61,4 +61,22 @@ class UserData: ObservableObject {
 //            print(diaries)
 //        }
 //    }
+	
+	
+	func addNew(_ diary: DiaryItem) {
+	}
+	
+	func update(id: UUID) {
+	}
+	
+	func remove(id: UUID) {
+	}
+	
+	func remove(index: Int) {
+	}
+	
+	func diary(of id: UUID) {
+	}
+	
+	
 }
