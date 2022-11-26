@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ModifyDiaryView: View {
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var userData: UserData
+    @EnvironmentObject var userData: UserData
     
     @Binding var diary: DiaryItem
     let diaryIndex: Int?
@@ -62,6 +62,8 @@ struct ModifyDiaryView: View {
 
 struct ModifyDiaryView_Previews: PreviewProvider {
     static var previews: some View {
-        ModifyDiaryView(userData: UserData.test(), diary: .constant(UserData.test().diaries.first!), diaryIndex: 0)
+		let userData = UserData.test()
+        ModifyDiaryView(diary: .constant(UserData.test().diaries.first!), diaryIndex: 0)
+			.environmentObject(userData)
     }
 }

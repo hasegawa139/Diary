@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DaysDiaryListView: View {
-    @ObservedObject var userData: UserData
+	@EnvironmentObject var userData: UserData
     @Binding var dateComponent: DateComponents
     
     @State private var foundDiaries: [DiaryItem]?
@@ -26,7 +26,8 @@ struct DaysDiaryListView: View {
                             }
                     }
                     .sheet(item: $selectedDiary) { diary in
-                        DiaryView(userData: userData, diary: diary, diaryIndex: userData.diaries.firstIndex(of: diary))
+                        DiaryView(diary: diary, diaryIndex: userData.diaries.firstIndex(of: diary))
+							.environmentObject(userData)
                     }
                 }
             }
@@ -57,6 +58,8 @@ struct DaysDiaryListView_Previews: PreviewProvider {
     static var dateComponent: DateComponents = Calendar.current.dateComponents(in: TimeZone.current, from: Date())
     
     static var previews: some View {
-        DaysDiaryListView(userData: UserData.test(), dateComponent: .constant(dateComponent))
+		let userData = UserData.test()
+		DaysDiaryListView(dateComponent: .constant(dateComponent))
+			.environmentObject(userData)
     }
 }

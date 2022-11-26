@@ -17,7 +17,7 @@ struct ContentView: View {
         VStack {
             NavigationView {
                 ScrollView {
-                    CalendarView(userData: userData, dateComponent: $dateComponent)
+                    CalendarView(dateComponent: $dateComponent)
                         .padding()
                 }
                 .toolbar {
@@ -28,13 +28,14 @@ struct ContentView: View {
                             Image(systemName: "square.and.pencil")
                         }
                         .sheet(isPresented: $showingAddDiaryView) {
-                            AddDiaryView(userData: userData, dateComponent: $dateComponent)
+                            AddDiaryView(dateComponent: $dateComponent)
+								.environmentObject(userData)
                         }
                     }
                 }
             }
             
-            DaysDiaryListView(userData: userData, dateComponent: $dateComponent)
+            DaysDiaryListView(dateComponent: $dateComponent)
                 .frame(height: 180)
         }
     }

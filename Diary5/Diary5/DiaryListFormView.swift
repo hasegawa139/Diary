@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DiaryListFormView: View {
-    @ObservedObject var userData: UserData
+    @EnvironmentObject var userData: UserData
     
     @State private var selectedDiary: DiaryItem?
     @Binding var diaries: [DiaryItem]
@@ -23,7 +23,8 @@ struct DiaryListFormView: View {
                     }
             }
             .sheet(item: $selectedDiary) { diary in
-                DiaryView(userData: userData, diary: diary, diaryIndex: userData.diaries.firstIndex(of: diary))
+                DiaryView(diary: diary, diaryIndex: userData.diaries.firstIndex(of: diary))
+					.environmentObject(userData)
             }
         }
     }
@@ -31,6 +32,8 @@ struct DiaryListFormView: View {
 
 struct DiaryListFormView_Previews: PreviewProvider {
     static var previews: some View {
-        DiaryListFormView(userData: UserData.test(), diaries: .constant(UserData.test().diaries))
+		let userData = UserData.test()
+        DiaryListFormView(diaries: .constant(UserData.test().diaries))
+			.environmentObject(userData)
     }
 }

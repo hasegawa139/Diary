@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ExtractedDiariesView: View {
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var userData: UserData
-    @ObservedObject var selectedItem: SelectedItem
+    @EnvironmentObject var userData: UserData
+    @EnvironmentObject var selectedItem: SelectedItem
     
     @Binding var extractedDiaryList: [DiaryItem]
     
     var body: some View {
         NavigationView {
             VStack {
-                DiaryListFormView(userData: userData, diaries: $extractedDiaryList)
+                DiaryListFormView(diaries: $extractedDiaryList)
                 
                 Text("\(extractedDiaryList.count)件")
                     .foregroundColor(.gray)
@@ -28,6 +28,10 @@ struct ExtractedDiariesView: View {
 
 struct ExtractedDiariesView_Previews: PreviewProvider {
     static var previews: some View {
-        ExtractedDiariesView(userData: UserData.test(), selectedItem: SelectedItem(), extractedDiaryList: .constant(UserData.test().diaries))
+		let userData = UserData.test()
+		let selectedItem = SelectedItem()
+        ExtractedDiariesView(extractedDiaryList: .constant(UserData.test().diaries))
+			.environmentObject(userData)
+			.environmentObject(selectedItem)
     }
 }

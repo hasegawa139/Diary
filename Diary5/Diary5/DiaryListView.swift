@@ -29,14 +29,14 @@ struct DiaryListView: View {
                             .foregroundColor(.gray)
                     } else if searchText.isEmpty {
                         VStack {
-                            DiaryListFormView(userData: userData, diaries: $allDiaries)
+                            DiaryListFormView(diaries: $allDiaries)
                             
                             Text("全\(userData.diaries.count)件")
                                 .foregroundColor(.gray)
                         }
                     } else {
                         VStack {
-                            DiaryListFormView(userData: userData, diaries: $searchResults)
+                            DiaryListFormView(diaries: $searchResults)
                             
                             Text("\(searchResults.count)件")
                                 .foregroundColor(.gray)
@@ -47,11 +47,11 @@ struct DiaryListView: View {
                     
                     if searchText.isEmpty {
                         VStack {
-                            ExtractedDiariesView(userData: userData, selectedItem: selectedItem, extractedDiaryList: $extractedDiaryList)
+                            ExtractedDiariesView(extractedDiaryList: $extractedDiaryList)
                         }
                     } else {
                         VStack {
-                            DiaryListFormView(userData: userData, diaries: $searchResults)
+                            DiaryListFormView(diaries: $searchResults)
                             
                             Text("\(searchResults.count)件")
                                 .foregroundColor(.gray)
@@ -67,7 +67,8 @@ struct DiaryListView: View {
                         Image(systemName: "square.and.pencil")
                     }
                     .sheet(isPresented: $showingAddDiaryView) {
-                        AddDiaryView(userData: userData, dateComponent: $dateComponent)
+                        AddDiaryView(dateComponent: $dateComponent)
+							.environmentObject(userData)
                     }
                 }
                 
@@ -80,8 +81,10 @@ struct DiaryListView: View {
                         }
                         .disabled(userData.diaries.isEmpty)
                         .sheet(isPresented: $showingFilterDiariesView) {
-                            FilterDiariesView(userData: userData, selectedItem: selectedItem, showingExtractedDiariesView: $showingExtractedDiariesView, extractedDiaryList: $extractedDiaryList)
+                            FilterDiariesView(showingExtractedDiariesView: $showingExtractedDiariesView, extractedDiaryList: $extractedDiaryList)
                                 .presentationDetents([.medium, .large])
+								.environmentObject(userData)
+								.environmentObject(selectedItem)
                         }
                     } else {
                         Button(action: {

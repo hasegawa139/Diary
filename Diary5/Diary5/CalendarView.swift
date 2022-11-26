@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CalendarView: UIViewRepresentable {
-    @ObservedObject var userData: UserData
+    @EnvironmentObject var userData: UserData
     @Binding var dateComponent: DateComponents
     
     func makeUIView(context: Context) -> UICalendarView {
@@ -25,7 +25,7 @@ struct CalendarView: UIViewRepresentable {
     }
     
     func makeCoordinator() -> Coordinator {
-        Coordinator(userData: _userData, dateComponent: $dateComponent)
+        Coordinator(parent: self)
     }
     
     func updateUIView(_ uiView: UICalendarView, context: Context) {
@@ -38,16 +38,14 @@ struct CalendarView: UIViewRepresentable {
     }
     
     class Coordinator: NSObject, UICalendarViewDelegate, UICalendarSelectionSingleDateDelegate {
-        @ObservedObject var userData: UserData
-        @Binding var dateComponent: DateComponents
+		let parent: CalendarView
         
-        init(userData: ObservedObject<UserData>, dateComponent: Binding<DateComponents>) {
-            _userData = userData
-            _dateComponent = dateComponent
-        }
+		init(parent: CalendarView) {
+			self.parent = parent
+		}
         
         func calendarView(_ calendarView: UICalendarView, decorationFor dateComponents: DateComponents) -> UICalendarView.Decoration? {
-            let foundDiaries = userData.diaries.filter { diary in
+			let foundDiaries = parent.userData.diaries.filter { diary in
                     Calendar.current.startOfDay(for: diary.date) == Calendar.current.startOfDay(for: dateComponents.date!)
                 }
             
@@ -63,7 +61,7 @@ struct CalendarView: UIViewRepresentable {
         
         func dateSelection(_ selection: UICalendarSelectionSingleDate, didSelectDate dateComponents: DateComponents?) {
             guard let components = dateComponents else { return }
-            dateComponent = components
+			parent.dateComponent = components
         }
     }
 }

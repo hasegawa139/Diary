@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DiaryView: View {
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var userData: UserData
+    @EnvironmentObject var userData: UserData
     
     @State var diary: DiaryItem
     let diaryIndex: Int?
@@ -46,7 +46,7 @@ struct DiaryView: View {
                     Text("日記を編集")
                 }
                 .sheet(isPresented: $showingModifyDiaryView) {
-                    ModifyDiaryView(userData: userData, diary: $diary, diaryIndex: diaryIndex)
+                    ModifyDiaryView(diary: $diary, diaryIndex: diaryIndex)
                 }
                 .padding()
                 
@@ -88,6 +88,8 @@ struct DiaryView: View {
 
 struct DiaryView_Previews: PreviewProvider {
     static var previews: some View {
-        DiaryView(userData: UserData.test(), diary: UserData.test().diaries.first!, diaryIndex: 0)
+		let userData = UserData.test()
+        DiaryView(diary: UserData.test().diaries.first!, diaryIndex: 0)
+			.environmentObject(userData)
     }
 }

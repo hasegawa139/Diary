@@ -9,11 +9,13 @@ import SwiftUI
 
 @main
 struct Diary5App: App {
+	@StateObject var userData = UserData(diaries: [])
+	
     var body: some Scene {
         WindowGroup {
             DisplayStyleTabView()
-                .environmentObject(UserData(diaries: []))
-                .environmentObject(SelectedItem())
+                .environmentObject(userData)
+//                .environmentObject(SelectedItem())
         }
     }
 }

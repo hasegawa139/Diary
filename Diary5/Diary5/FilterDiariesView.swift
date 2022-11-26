@@ -9,8 +9,8 @@ import SwiftUI
 
 struct FilterDiariesView: View {
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var userData: UserData
-    @ObservedObject var selectedItem: SelectedItem
+    @EnvironmentObject var userData: UserData
+    @EnvironmentObject var selectedItem: SelectedItem
     
     @Binding var showingExtractedDiariesView: Bool
     @Binding var extractedDiaryList: [DiaryItem]
@@ -122,6 +122,10 @@ struct FilterDiariesView: View {
 
 struct FilterDiariesView_Previews: PreviewProvider {
     static var previews: some View {
-        FilterDiariesView(userData: UserData.test(), selectedItem: SelectedItem(), showingExtractedDiariesView: .constant(false), extractedDiaryList: .constant(UserData.test().diaries))
+		let userData = UserData.test()
+		let selectedItem = SelectedItem()
+        FilterDiariesView(showingExtractedDiariesView: .constant(false), extractedDiaryList: .constant(UserData.test().diaries))
+			.environmentObject(userData)
+			.environmentObject(selectedItem)
     }
 }
